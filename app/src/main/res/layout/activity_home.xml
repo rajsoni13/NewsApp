@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:forceDarkAllowed="false"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    tools:context=".home">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Social X"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textColor="@color/purple_500"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        android:forceDarkAllowed="false"
+        android:layout_margin="14dp"
+        app:cardElevation="8dp">
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/search_view"
+            app:defaultQueryHint="Search News!"
+            app:iconifiedByDefault="false"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_name"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
